@@ -1,0 +1,88 @@
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1.75em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #e5474b;
+  font-family: Georgia, serif;
+  margin: 0; /* Important for vertical align on mobile phones */
+  height: 73px;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ff0800;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.visualize-btn {
+  float: left;
+  background-color: #e5474b; 
+  border: none;
+  color: white;
+  font-size: 1.75em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  font-family: Georgia, serif;
+  margin: 0; /* Important for vertical align on mobile phones */
+  height: 73px;
+}
+
+.visualize-btn:hover {
+  background-color: #ff0800;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  margin-top: -30px;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
