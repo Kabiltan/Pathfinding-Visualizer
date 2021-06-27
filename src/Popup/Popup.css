@@ -68,3 +68,7 @@
     font-family: Georgia, serif;
     margin: 0; /* Important for vertical align on mobile phones */
 }
+
+.inner-text {
+  font-weight: lighter;
+}

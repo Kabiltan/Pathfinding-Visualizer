@@ -7,6 +7,7 @@ import Page1 from "./Popup/Page1";
 import Page2 from "./Popup/Page2";
 import Page3 from "./Popup/Page3";
 import Page4 from "./Popup/Page4";
+import Page5 from "./Popup/Page5";
 
 function App() {
   const [timedPopup, setTimedPopup] = useState(false);
@@ -51,14 +52,24 @@ function App() {
   else if(page === 4){
     return (
       <div className="App">
-        <FinalPopup trigger={timedPopup} setTrigger={setTimedPopup} setPage={setPage} page={page}>
+        <Popup trigger={timedPopup} setTrigger={setTimedPopup} setPage={setPage} page={page}>
           <Page4></Page4>
-        </FinalPopup>
+        </Popup>
         <PathfindingVisualizer></PathfindingVisualizer>
       </div>
     );
   }
   else if(page === 5){
+    return (
+      <div className="App">
+        <FinalPopup trigger={timedPopup} setTrigger={setTimedPopup} setPage={setPage} page={page}>
+          <Page5></Page5>
+        </FinalPopup>
+        <PathfindingVisualizer></PathfindingVisualizer>
+      </div>
+    );
+  }
+  else if(page === 6 || page === 0){
     return (
       <div className="App">
         <PathfindingVisualizer></PathfindingVisualizer>
